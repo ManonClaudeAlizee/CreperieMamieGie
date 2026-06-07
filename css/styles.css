@@ -1,0 +1,94 @@
+/* ==========================
+   SWIPER RECETTES
+   ========================== */
+
+.recetteSwiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Slides */
+
+.recetteSwiper .swiper-slide {
+    height: 260px;
+    display: flex;
+}
+
+/* Cartes */
+
+.recetteSwiper .card {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Images */
+
+.recetteSwiper .card-img-top {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Corps de carte */
+
+.recetteSwiper .card-body {
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+}
+
+/* Prix */
+
+.recetteSwiper .fw-bold {
+    font-size: 1.1rem;
+}
+
+/* Ligne du bas */
+
+.recetteSwiper .card-footer-icons {
+    margin-top: auto;
+}
+
+/* Icônes */
+
+.recetteSwiper .card-footer-icons i {
+    font-size: 0.8rem;
+}
+
+/* Flèches */
+
+.recette-prev,
+.recette-next {
+    position: static !important;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.recette-prev::after,
+.recette-next::after {
+    font-size: 24px;
+    color: #212529;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .recetteSwiper .card {
+        height: 340px;
+    }
+
+    .recetteSwiper .card-img-top {
+        height: 180px;
+    }
+
+}
